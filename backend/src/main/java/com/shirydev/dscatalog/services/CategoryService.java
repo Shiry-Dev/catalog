@@ -9,7 +9,10 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
+
+import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
 
 @Service
 public class CategoryService {
@@ -30,5 +33,12 @@ public class CategoryService {
 
         List<CategoryDTO> listDto = list.stream().map(x -> new CategoryDTO(x)).collect(Collectors.toList());
         return listDto;
+    }
+
+    @Transactional(readOnly = true)
+    public CategoryDTO findById(Long id){
+        Optional<Category> obj = repository.findById(id);
+        Category entity = obj.get();
+        return new CategoryDTO(entity);
     }
 }
