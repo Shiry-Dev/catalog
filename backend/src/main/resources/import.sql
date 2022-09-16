@@ -1,3 +1,15 @@
 INSERT INTO tb_category(name, created_At) VALUES('Books', NOW());
 INSERT INTO tb_category(name, created_At) VALUES('Computers', NOW());
 INSERT INTO tb_category(name, created_At) VALUES('Electronics', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Home', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Garage', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Bath', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Kitchen', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Garden', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Clothes', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Bed', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Fruits', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Laptops', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Games', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Cellphones', NOW());
+INSERT INTO tb_category(name, created_At) VALUES('Toys', NOW());
